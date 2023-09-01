@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@500&display=swap');
+
+.featured-sec{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.featured-title{
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size: 25px;
+    font-family: 'M PLUS 1p';
+}
+
+.featured-product-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* overflow: hidden; */
+}
+
+.featured-product-card{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.featured-product-card-image{
+    background-color: rgba(122, 127, 195, 0.144);
+    border-radius: 20px;
+    width: 350px;
+}
+
+.featured-product-card-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.featured-product-Name-card{
+    width: 350px;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+}
+

@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@500&display=swap');
+
+.Discover{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.Discover-title{
+    font-size: 30px;
+    text-transform: capitalize;
+    font-family: 'M PLUS 1p';
+    font-weight: bolder;
+    margin-left: 20px;
+}
+
+.Discover-gly-box{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gly{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    z-index: -1;
+}
+
+.gly-1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.gly-2{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.gly-2-2{
+    display: flex;
+    gap: 10px;
+}
+
+.img-text {
+    position: relative;
+}
+
+.img-text img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.img-text p{
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    color: white;
+    font-size: 30px;
+    text-transform: capitalize;
+    font-family: 'M PLUS 1p';
+    font-weight: bolder;
+}
+
+.Discover-frame{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    height: 500px;
+    padding: 40px;
+}
+
+.frame{
+    padding: 10px;
+}
+
+.Discover-frame-title{
+    font-size: 60px;
+    font-family: 'M PLUS 1p';
+    font-weight: bolder;
+    color: rgb(5, 5, 38);
+    text-align: center;
+    width: 600px;
+}
+
+.Discover-frame-button button{
+    background-color: yellow;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 20px;
+}
+
+.moreTrust{
+    margin-top: 20px;
+}
+
+.more-frame{
+    display: flex;
+    flex-direction: column;
+}
+.moreTrust-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-around;
+}
+
+.mt-box-1{
+    width: 750px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(70%);
+    z-index: -1;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.mt-box-1-1{
+    margin-left: 20px;
+    font-size: 40px;
+    font-family: 'M PLUS 1p';
+    font-weight: bolder;
+    color: rgb(28, 206, 222);
+    filter: brightness(100%);
+}
+.mt-box-1-2{
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    font-family: 'M PLUS 1p';
+    color: white;
+}
+
+@media only screen and (max-width: 768px){
+    .Discover-frame-title{
+        width: auto;
+        font-size: 20px;
+    }
+    .img-text p{
+        color: white;
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.navBar{
+    background-color: rgb(12, 15, 63);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    /* padding: 5px; */
+}
+
+.navbox{
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-log{
+    color: white;
+    font-size: 60px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    margin-top: 5px;
+}
+
+.circle{
+    color:red;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1100px;
+}
+
+.menu-list{
+    list-style: none;
+    display: flex;
+    column-gap: 120px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 25px;
+}
+
+.nav-search-action{
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Toggle */
+
+.toggle-box{
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modlue{
+    position: absolute;
+    background-color: rgb(12, 15, 63);
+    width: 100%;
+    animation-name: toggle-menu; 
+    animation-duration: 1s;
+}
+.modlue-close{
+    animation-name: toggle-menu-close;
+    animation-duration: 2ms;
+}
+.toggle-nav-menu{
+    display: flex;
+    justify-content:center;
+    align-content:center;
+    padding: 10px;
+}
+
+.toggle-nav-menu .menu-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+
+}
+
+.toggle-menu-item{
+    padding: 5px;;
+}
+
+.toggle-menu-item :hover{
+    width: 100%;
+    border-bottom: 5px solid rgb(14, 88, 174);
+}
+/* search box */
+
+.search-box{
+    display: flex;
+    column-gap: 20px;
+}
+
+.search-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-input input{
+    width: 1100px;
+    height: 20px;
+    font-size: 18px;
+    padding: 5px;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    border: 1px solid rgba(128, 128, 128, 0.511);
+}
+
+.search-input input:focus{
+    outline: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-menu{
+        display: none;
+    }
+    .navbox{
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+    }
+    .toggle-box{
+        display: flex;
+    }
+
+    .search-input input{
+        width: 200px;
+        height: 18px;
+        font-size: 15px;
+        padding: 2px;
+        background-color: transparent;
+        color: white;
+        font-weight: bold;
+        border: 1px solid rgba(128, 128, 128, 0.511);
+    }
+    .modlue{
+        display: block;
+    }
+}
+
+@keyframes toggle-menu{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+@keyframes toggle-menu-close{
+    0%{
+        width: 100%;
+    }
+    100%{
+        width: 0%;
+    }
+}
